@@ -8,6 +8,7 @@ namespace DataStructure
 {
     internal class LinkedList
     {
+
         public Node head;
         //Method to Add Node in Linked List
         public void AddLast(int data)
@@ -32,7 +33,7 @@ namespace DataStructure
             Console.WriteLine("inserted into node: " + newnode.data);
         }
 
-        //Display Method to display the items from linked list
+        //Display Method
         public void DisplayLinkedList()
         {
             Console.WriteLine("Display nodes of Linked List");
@@ -60,5 +61,11 @@ namespace DataStructure
             Console.WriteLine("{0} : Nodes inserted in Linked list ", newnode.data);
         }
 
+        //method to append 
+        public void Append(int data)
+        {
+            AddLast(data);
+            Console.WriteLine("{0} node Appended", data);
+        }
     }
 }
