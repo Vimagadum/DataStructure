@@ -140,7 +140,7 @@ namespace DataStructure
             Console.WriteLine("node deleted at Last position is " + deleteLastNode);
             return deleteLastNode;
         }
-        //Method for search node
+        ///Method for search node
         public int SearchNode(int value)
         {
             Node temp = this.head;
@@ -156,5 +156,32 @@ namespace DataStructure
             Console.WriteLine("{0} is not a Linked List Node", value);
             return 0;
         }
+        //method to insert value after a certain value
+        public void InsertAfter(int data, int x)
+        {
+            Node p = head;
+            while (p != null)
+            {
+                if (p.data == x)
+                {
+                    break;
+
+                }
+                p = p.next;
+            }
+            if (p == null)
+            {
+                Console.WriteLine(x + "not present in list");
+
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp.next = p.next;
+                p.next = temp;
+            }
+        }
+
+
     }
 }
