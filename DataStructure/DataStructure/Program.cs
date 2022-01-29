@@ -18,9 +18,18 @@ using DataStructure;
 //customLinkedList.Append(70);
 //customLinkedList.DisplayLinkedList();
 
+//LinkedList customLinkedList = new LinkedList();
+//customLinkedList.Append(56);
+//customLinkedList.Append(70);
+//customLinkedList.DisplayLinkedList();
+//customLinkedList.InsertAtPosition(3, 30);
+//customLinkedList.DisplayLinkedList();
+
 LinkedList customLinkedList = new LinkedList();
 customLinkedList.Append(56);
 customLinkedList.Append(70);
 customLinkedList.DisplayLinkedList();
 customLinkedList.InsertAtPosition(3, 30);
+customLinkedList.DisplayLinkedList();
+customLinkedList.DeleteFirst();
 customLinkedList.DisplayLinkedList();
