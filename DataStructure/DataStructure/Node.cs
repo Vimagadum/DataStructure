@@ -18,4 +18,15 @@ namespace DataStructure
             this.next = null;
         }
     }
+    public class SortedNode<T>
+    {
+        public T data;
+        public SortedNode<T> next;
+
+        public SortedNode(T data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
 }
